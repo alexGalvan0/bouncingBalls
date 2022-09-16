@@ -70,16 +70,12 @@ class Ball {
   }
 
 }
-const testBall = new Ball(50, 100, 4, 4, 'blue', 10);
-
-testBall.x
-testBall.size
-testBall.color
-testBall.draw()
 
 const balls = [];
 
-while (balls.length < 25) {
+let NumberOfBalls = prompt("how many balls?")
+
+while (balls.length < NumberOfBalls) {
   const size = random(10,20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
